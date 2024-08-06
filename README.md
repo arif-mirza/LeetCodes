@@ -1,1 +1,1 @@
-# Leedcodes
+# Leetcodes in javascript
