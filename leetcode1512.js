@@ -1,23 +1,20 @@
 // 1512. Number of Good Pairs
 
-nums = [1,2,3,1,1,3]
+nums = [1, 2, 3, 1, 1, 3];
 
-var numIdenticalPairs = function(nums) {
+var numIdenticalPairs = function (nums) {
+  let dic = {};
 
-let dic = {}
+  let count = 0;
 
-let count = 0;
-
-for(let i of nums)
-{
-  if(i in dic){
-    count += dic[i]
-    dic[i]+=1
-  }else{
-    dic[i] = 1
+  for (let i of nums) {
+    if (i in dic) {
+      count += dic[i];
+      dic[i] += 1;
+    } else {
+      dic[i] = 1;
+    }
   }
+};
 
-}
-}
-
-console.log(numIdenticalPairs(nums)) // Output: 6
+console.log(numIdenticalPairs(nums)); // Output: 6
